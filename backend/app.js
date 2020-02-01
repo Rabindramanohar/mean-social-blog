@@ -17,6 +17,8 @@ app.use(bodyParser.urlencoded({extended:false}));
     next();
 }) */
 
+/* 7l49KQgvvhn8KxZA */
+
 app.use(cors({
     origin :"http://localhost:4200"
 }));
