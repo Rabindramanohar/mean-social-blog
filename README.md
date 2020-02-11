@@ -32,3 +32,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 7/2/20: not done anything because I gave bad experience in interview
 nothing done today also 8/2/20
 really not doing well distrating with my goal 9/2/2020
+I have to work hard 11/2/2020
