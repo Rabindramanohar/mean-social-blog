@@ -35,3 +35,5 @@ really not doing well distrating with my goal 9/2/2020
 I have to work hard 11/2/2020
 Not done any thing 12/2/2020
 finally TOS  is initiated and now it's time to work hard 13/2/2020
+I have manage time for learning
+
