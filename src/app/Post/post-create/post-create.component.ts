@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 import { PostService } from '../post.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Post } from '../model';
@@ -19,6 +19,7 @@ export class PostCreateComponent implements OnInit {
   post: Post;
 
   isLoading = false;
+  form: FormGroup;
 
   
   onSavePost(form: NgForm) {
@@ -35,6 +36,10 @@ export class PostCreateComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.form = new FormGroup({
+      'title': new FormControl(null, )
+    })
+
     this.route.paramMap.subscribe((paramMap: ParamMap) => {
       if(paramMap.has('postId')) {
         this.mode = 'edit';
