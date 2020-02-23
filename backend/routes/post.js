@@ -1,7 +1,29 @@
 const express = require("express");
 const Post = require("../models/post");
+const multer = require('multer');
 
 const router = express.Router();
+const MIME_TYPE_MAP = {
+    'image/png': 'png',
+    'image/jpeg': 'jpg',
+    'image/jpg': 'jpg',
+}
+
+const storage = multer.diskStorage({
+    destination: (req, res, cb) => {
+        const isValid = MIME_TYPE_MAP[File.mimetype];
+        let error = new Error("Invalid mime type");
+        if(isValid) {
+            error = null;
+        }
+        cb(error, "backend/images");
+    },
+    filename: (req, res, cb) => {
+        const name = file.originalName.toLowerCase();
+        const ext = MIME_TYPE_MAP[file.mimetype];
+        cb(null, name + '-' + Date.now() + '.' + ext);
+    }
+});
 
 router.post("", (req, res, next) => {
     /* const post = req.body;
@@ -20,7 +42,7 @@ router.post("", (req, res, next) => {
     });
 })
 
-router.get("",(req, res, next) => {
+router.get("",multer({storage: storage}).single("image"), (req, res, next) => {
     Post.find().then(documents => {
         res.status(200).json({
             message: 'Post fetch successfully!!',
