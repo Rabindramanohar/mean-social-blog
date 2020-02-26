@@ -39,4 +39,5 @@ I have manage time for learning 14/2/2020
 I was bussy with interview but not got selected its really painful for me 15/2/2020
 i have to be focused 16/2/20
 feeling bad not understand what to do
+till not done anything - 26/2/2020
 
