@@ -8,8 +8,8 @@ const cors = require('cors');
 const postsRoutes = require('./routes/post');
 
 const app = express();
-
-mongoose.connect("mongodb+srv://Robin:7l49KQgvvhn8KxZA@cluster0-y4top.mongodb.net/node-angular?retryWrites=true&w=majority")
+// NW8uldDyDuHEiMgz
+mongoose.connect('mongodb+srv://Robin:NW8uldDyDuHEiMgz@cluster0-y4top.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to DB Successful!!');
     })

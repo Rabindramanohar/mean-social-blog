@@ -41,5 +41,6 @@ i have to be focused 16/2/20
 feeling bad not understand what to do
 till not done anything - 26/2/2020
 focused on interview - 27/2/2020
+unable to connect to mongoose db  I tried but not succeed - 8/3/2020
 
 
